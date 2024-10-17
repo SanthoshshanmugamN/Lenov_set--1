@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Maximum Element</title>
+    <link rel="stylesheet" href="set1.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Find the Maximum Element</h1>
+        <div class="question">
+            <p>Given an array of integers, find the maximum element.</p>
+        </div>
+        
+        <div class="input-section">
+            <label for="arrayInput">Enter integers :</label>
+            <input type="text" id="arrayInput" placeholder="e.g., 3, 5, 7, 2, 8">
+        </div>
+        
+        <div class="output-section">
+            <button onclick="findMax()">Find Maximum</button>
+            <p class="result" id="maxResult"></p>
+        </div>
+    </div>
+
+
+    <!--target values-->
+    <div class="container">
+        <!-- RETURN INDICES OF TWO NUMBERS -->
+        <h1>Return Indices of Two Numbers that Add Up to Target</h1>
+        <label for="arrayInput">Enter an array of numbers (comma-separated):</label>
+
+        <input type="text" id="arrayInput2" placeholder="e.g., 2, 7, 11, 15">
+        <label for="targetInput">Enter the target sum:</label>
+
+        <input type="number" id="targetInput" placeholder="e.g., 9">
+        <button onclick="calculateTwoSum()">Find Indices</button>
+
+        <p id="output2"></p>
+
+    </div>
+    <!--signup container-->
+
+    <div class="container" id="signupContainer">
+        <h2>Signup</h2>
+        <label for="username">Name:</label>
+        <input type="text" id="name" placeholder="Name">
+        <br>
+        <label for="username">Email:</label>
+        <input type="text" id="username" placeholder="Enter Email">
+        <br>
+        <label for="password">password :</label>
+        <input type="text" id="password" placeholder="Enter Password">        
+        <br>
+        <label for="operator">Choose an operator:</label>
+        <select id="operator">
+            <option value="add">Addition</option>
+            <option value="sub">Subtraction</option>
+            <option value="mul">Multiplication</option>
+        </select>
+
+        <button onclick="signup()">Submit</button>
+    </div>
+
+    <div class="container" id="calcContainer" style="display: none;">
+        <h2>Calculator</h2>
+        <label for="num1">Input 1:</label>
+        <input type="number" id="num1">
+
+        <label for="num2">Input 2:</label>
+        <input type="number" id="num2">
+
+        <button onclick="calculate()">Calculate</button>
+        <p id="result"></p>
+    </div>
+
+   
+
+   
+<script src="set1.js"></script>
+</body>
+</html>
